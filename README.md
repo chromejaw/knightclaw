@@ -50,7 +50,7 @@ flowchart TD
 |---|---------|-------------|---------|
 | **1** | 🛡️ **Guard 2.0** | Blocks prompt injections, malicious inputs, homoglyphs, and jailbreaks using an advanced hybrid heuristics and semantic engine. | Active |
 | **2** | 📋 **Logs** | A secure, hash-chained, immutable audit trail. Every action is recorded—tamper-proof. | Active |
-| **3** | 🔐 **Vault** | Encrypts all your secrets at rest (AES-256-GCM), ensuring keys are never exposed in plaintext. | Active |
+| **3** | 🔐 **Vault** | Encrypts all your secrets at rest (AES-256-GCM), ensuring keys are never exposed in plaintext. | Under Construction |
 | **4** | 🚨 **Lockdown** | The ultimate emergency kill switch. Detects high-velocity attacks and instantly blocks all operations. | Armed |
 
 *Our guarantee: If one layer fails, 3 others are still guarding the gate.*
