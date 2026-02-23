@@ -1,6 +1,6 @@
 <div align="center">
   <h1>⚔️ KnightClaw</h1>
-  <p><b>Drop-in security armor for OpenClaw — 4 layers of defense, zero complexity.</b></p>
+  <p><b>Armor for OpenClaw</b></p>
 </div>
 
 ---
