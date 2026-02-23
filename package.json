@@ -1,0 +1,41 @@
+{
+  "name": "knightclaw",
+  "version": "1.0.0",
+  "description": "Drop-in security plugin for OpenClaw — 4 layers of defense, zero complexity",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc && cp -r src/assets dist/src/assets",
+    "dev": "tsc --watch",
+    "test": "node --test dist/tests/",
+    "clean": "rm -rf dist",
+    "load": "node scripts/load.cjs",
+    "uninstall": "node tools/uninstall.js"
+  },
+  "keywords": [
+    "openclaw",
+    "security",
+    "plugin",
+    "knightclaw"
+  ],
+  "license": "MIT",
+  "bin": {
+    "knightclaw-load": "scripts/load.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3"
+  },
+  "openclaw": {
+    "extensions": [
+      "dist/src/index.js"
+    ]
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.17.2"
+  }
+}

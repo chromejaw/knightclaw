@@ -1,0 +1,10 @@
+{
+  "id": "knightclaw",
+  "name": "KnightClaw",
+  "description": "Drop-in security armor for OpenClaw — input sanitization, lockdown, and defense layers.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+  }
+}

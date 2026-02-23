@@ -1,0 +1,52 @@
+{
+  "id": "knightclaw",
+  "name": "KnightClaw",
+  "description": "Drop-in security armor for OpenClaw — 4 layers of defense, zero complexity",
+  "version": "1.0.0",
+  "kind": "extension",
+  "skills": [
+    "src/skills/scan"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "guard": {
+        "type": "object",
+        "description": "Input validation & injection detection"
+      },
+      "logs": {
+        "type": "object",
+        "description": "Immutable audit trail"
+      },
+      "vault": {
+        "type": "object",
+        "description": "Secret encryption at rest"
+      },
+      "lockdown": {
+        "type": "object",
+        "description": "Emergency kill switch"
+      }
+    },
+    "additionalProperties": false
+  },
+  "uiHints": {
+    "config": {
+      "guard": {
+        "label": "🛡️ Guard Defense Layers",
+        "description": "Configure input validation and injection handling."
+      },
+      "logs": {
+        "label": "📜 Audit Logs",
+        "description": "Settings for immutable security audit logging."
+      },
+      "vault": {
+        "label": "🔐 Secret Vault",
+        "description": "Encryption settings for sensitive data at rest."
+      },
+      "lockdown": {
+        "label": "🚨 Emergency Lockdown",
+        "description": "Kill switch controls for immediate threat response."
+      }
+    }
+  }
+}
