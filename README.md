@@ -21,8 +21,7 @@ KnightClaw operates as a synchronous interceptor within OpenClaw. Before any too
 
 ```mermaid
 flowchart TD
-    User([Attacker / User]) -->|Payload| O[OpenClaw Agent]
-    O -->|Intercept| KC{KnightClaw Engine}
+    User([Attacker / User]) -->|Payload| KC{KnightClaw Engine}
     
     subgraph KC_Layers [The 4 Layers of Defense]
     L1[🛡️ Guard 2.0<br>Input Validation]
@@ -35,10 +34,12 @@ flowchart TD
     L3 --> L4
     end
     
-    KC --> KC_Layers
+    KC -->|Intercepts| KC_Layers
     
     KC_Layers -->|Blocked!| Lockdown[System Locked]
-    KC_Layers -->|Safe| Execute[Execute Task]
+    KC_Layers -->|Safe!| O[OpenClaw Agent Core]
+    
+    O -->|Executes| Task[Run Task / Tool]
 ```
 
 ---
